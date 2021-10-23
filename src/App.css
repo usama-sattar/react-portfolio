@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  text-align: center;
+}
+body {
+  overflow-x: hidden;
+  background-color: #fef9ef !important;
+  scroll-behavior: smooth;
+}
+p {
+  font-size: 1.2rem;
+}
+.navbar {
+  background: none;
+  position: sticky !important;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: 1000ms;
+  height: 80px;
+  background-color: #fef9ef;
+}
+.navbar.active {
+  background-color: #ff865e;
+}
+.navbar-items {
+  justify-content: flex-end;
+}
+.banner {
+  height: 100vh;
+  background-color: #fef9ef;
+}
+.banner-inside {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.box {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  transform: rotateX(-30deg) rotateY(330deg);
+  transform-style: preserve-3d;
+  animation: animate 10s linear infinite;
+}
+.section-about {
+  background-color: #f9d5a7;
+  padding: 80px;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+}
+.box div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+.box div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.box div span:nth-child(1) {
+  background-color: #ff865e;
+  transform: rotateY(0deg) translate3d(0, 0, 75px);
+}
+.box div span:nth-child(2) {
+  background-color: #ec7852;
+  transform: rotateY(90deg) translate3d(0, 0, 75px);
+}
+.box div span:nth-child(3) {
+  background-color: #ff865e;
+
+  transform: rotateY(180deg) translate3d(0, 0, 75px);
+}
+.box div span:nth-child(4) {
+  background-color: #ec7852;
+
+  transform: rotateY(270deg) translate3d(0, 0, 75px);
+}
+.box .top-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ec7852;
+  transform: rotateX(90deg) translate3d(0, 0, 75px);
+}
+.section-skills img {
+  width: 100px;
+  height: 100px;
+}
+.portfolio-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.section-skills {
+  background-color: #fef1e6;
+  padding: 80px;
+}
+.section-portfolio {
+  background-color: #f9e4c8;
+  padding: 80px;
+}
+.section-contact {
+  background-color: #fef9ef;
+  padding: 100px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .box-container {
+    display: none;
+  }
+  .nav-sm {
+    background-color: #ec7852;
+    margin-left: 0;
+    padding: 0;
+    width: fit-content;
+  }
+}
