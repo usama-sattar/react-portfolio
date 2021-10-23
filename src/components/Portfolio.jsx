@@ -1,7 +1,7 @@
-import React, { Component, useEffect } from "react";
+import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { Card, Button, Row, Container } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 import "../App.css";
 import TASK1 from "../assets/task1.jpg";
 import TASK2 from "../assets/task2.png";

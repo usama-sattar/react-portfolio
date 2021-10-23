@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import "../App.css";
 
@@ -27,7 +27,7 @@ export default function NavigationBar() {
           id="basic-navbar-nav"
           className="justify-content-end nav-sm"
         >
-          <Nav className="me-auto" className="justify-content-end">
+          <Nav className="justify-content-end me-auto">
             <Nav.Link
               href="#about"
               style={{ color: nav ? "white" : "black", fontSize: "1.4rem" }}

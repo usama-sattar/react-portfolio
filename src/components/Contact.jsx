@@ -1,6 +1,6 @@
-import React, { Component, useEffect } from "react";
-import Aos from "aos";
-import { Container, Button } from "react-bootstrap";
+import React from "react";
+import "aos/dist/aos.css";
+import { Container } from "react-bootstrap";
 
 export default function Contact() {
   return (
